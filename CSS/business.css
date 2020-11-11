@@ -1,0 +1,553 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+
+
+
+
+/* MEDIA QUERIES*/
+
+/* SCREEN 1024PX*/
+@media only screen and (max-width:64em){
+    .business__header-text{
+        left: 25rem !important;
+        bottom: 13rem !important;
+    }
+
+    .asset__container{
+        flex-direction: column !important;
+    }
+    .card{
+        flex: 100% 0 0 !important;
+    }
+
+    .card:not(:last-child){
+        margin-bottom: 2rem !important;
+    }
+
+
+    .mopsu__banner{
+        width: 40rem !important;
+        height: 78rem !important;
+    }
+
+    .mopsu__benefits{
+        flex-direction: column !important;
+    }
+
+    .mopsu__benefits-containers:not(:last-child){
+        margin-bottom: 3rem !important;
+    }
+
+    .mopsu__stages-box{
+        flex: 40% 0 0 !important;
+    }
+
+    main{
+        padding: 9rem 10rem 0 10rem !important;
+    }
+}
+
+/* SCREEN 768PX*/
+@media only screen and (max-width:48em){
+
+    .business__header-text{
+        font-size: 6rem !important;
+        left: 20rem !important;
+        bottom: 13rem !important;
+    }
+    .navigation__links{
+        display: none !important;
+    }
+
+    .navigation__menu-icon{
+        display: block !important;
+
+    }
+
+    .mopsu__child{
+        display: none !important;
+    }
+
+    .mopsu__stages{
+        flex-wrap: nowrap !important;
+        flex-direction: column !important;
+        align-content: center;
+    }
+
+    .footer{
+        flex-direction: column !important;
+    }
+
+    .footer__box:not(:last-child){
+        padding-top: 3rem;
+        border-bottom: 2px solid white;
+        border-right: none !important;
+    }
+
+    .footer__box:not(:first-child){
+        margin-left: 0 !important;
+    }
+
+    main{
+        padding: 9rem 10rem 0 10rem !important;
+        padding-bottom: 10rem !important;
+    }
+
+    .mopsu{
+        padding: 9rem 10rem 8rem 10rem !important;
+    }
+
+    .benefits{
+        padding: 6rem 10rem 10rem 10rem !important;
+    }
+}
+
+
+
+/* SCREEN 425PX*/
+@media only screen and (max-width:26.6em){
+    .business__header-text{
+        left: 13rem !important;
+        bottom: 25rem !important;
+        font-size: 4rem !important;
+    }
+
+    .card-body h1 > span{
+        padding-bottom: 0 !important;  
+    }
+
+    .mopsu__stages-container > h1{
+        font-size: 2.4rem !important;
+    }
+
+    main{
+        padding: 9rem 5rem 0 5rem !important;
+        padding-bottom: 5rem !important;
+    }
+
+    .navigation{
+        padding:0 5rem !important;
+        padding-top: 1rem;
+    }
+
+    .fix img{
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .mopsu{
+        padding: 5rem !important;
+    }
+
+    .benefits{
+        padding: 5rem !important;
+    }
+}
+
+
+/* SCREEN 375PX*/
+@media only screen and (max-width:23.43em){
+    html{
+        font-size: 50% !important;
+    }
+
+    .business__header-text{
+        left: 3rem !important;
+        top: 18rem !important;
+    }
+    .services li{
+        font-size: 1.3rem !important;
+    }
+
+    .mopsu__header{
+        font-size: 2rem !important;
+    }
+
+    main{
+        padding: 9rem 3rem 0 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+
+    .navigation{
+        padding:0 2rem !important;
+        padding-top: 1rem;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+/* NAVIGATION BAR*/
+
+.navigation{
+    padding:0 10rem;
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 3px #0000;
+
+
+}
+
+.navigation__links{
+    display: flex;
+    align-items: start;
+}
+
+
+.navigation__nav-links{
+    list-style-type: none;
+}
+
+.navigation__nav-links .navigation__nav-items:link,
+.navigation__nav-links .navigation__nav-items:active,
+.navigation__nav-links .navigation__nav-items:visited
+{
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+    text-transform: capitalize;
+}
+
+
+.navigation__nav-links:not(:first-child){
+    margin-left: 4rem;
+}
+
+.navigation__logo{
+    height: 7rem;
+}
+
+
+
+
+
+
+/* SIDE NAV*/
+.navigation__menu-icon{
+    display: none;
+    height: 4rem;
+    width: 5rem;
+    
+}
+
+.side-nav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    opacity: .9;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 6rem;
+    transition: .7s;
+}
+
+.side-nav a{
+    display: block;
+    padding: 1.5rem 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+
+}
+
+.side-nav a:hover{
+    color: #fff;
+}
+
+.side-nav .close{
+    position: absolute;
+    top: 0;
+    right: 2.2rem;
+    font-size: 5rem;
+}
+
+
+
+
+/* BUSINESS HEADER*/
+.business__header{
+    position: relative;
+}
+
+.business__header-img{
+    height: 80vh;
+}
+
+.business__header-text{
+    font-size: 8rem;
+    font-style: normal;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    bottom: 19rem;
+    left: 40rem;
+}
+
+
+
+
+
+
+
+
+
+/* MAIN*/
+main{
+    padding: 9rem 10rem 0 10rem;
+    padding-bottom: 10rem;
+}
+
+
+
+
+/*SERVICES SECTION*/
+
+.asset__container{
+    justify-content: space-between;
+}
+.card{
+    font-size: 1.3rem;
+    color: black;
+    flex: 32% 0 0;
+    padding: 0 2rem;
+}
+
+.card-body h1{
+    color: #1b1b1b;
+    margin-bottom: 1.2rem;
+}
+
+.card-body h1 > span{
+    padding-bottom: .2rem;
+    border-bottom: 3px solid limegreen;
+}
+
+.asset__management li{
+    list-style: none;
+}
+
+.resevoir__section li{
+    list-style: none;
+}
+
+.Product__section li{
+    list-style: none;
+}
+
+.asset__management-icon{
+    width: 1.5rem;
+    fill: #1b1b1b;
+    height: 1.5rem;
+    margin-right: .8rem;
+}
+
+.assetm-icons{
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 1rem;
+}
+
+
+
+
+/*MOPSU SECTION*/
+.mopsu{
+    background-color: whitesmoke;
+    padding: 9rem 10rem 8rem 10rem;
+}
+
+
+.mopsu__banner{
+    height: 64rem ;
+    width: 60rem;
+    object-fit: cover;
+}
+
+.mopsu__body{
+    background-color: white;
+    padding-top: 2.5rem; 
+}
+
+.mopsu__header{
+    background-color: black;
+    color: white;
+    width: 95%;
+    padding: 1.5rem 0 1.5rem 2rem ;
+    
+}
+
+.mopsu__header span{
+    color: white;
+}
+
+.mopsu__body-paragraph{
+    padding: 0 2rem 0 2rem;
+    font-style: normal;
+    font-size: 1.3rem;
+}
+
+.mopsu__header-2{
+    padding: 0 0 0 2rem
+}
+
+.mopsu__body-paragraph-2{
+    padding: 0 2rem 0 2rem;
+    font-style: normal;
+    font-size: 1.3rem;
+    position: relative;
+}
+
+
+.mopsu__benefits{
+    margin-bottom: 6rem;
+}
+
+.mopsu__benefits-icon{
+    width: 3rem;
+    height: 3rem;
+    fill: limegreen;
+    /* margin-right: .8rem; */
+}
+
+.mopsu__benefits-containers{
+    flex: 30% 0 0;
+}
+
+
+.mopsu__benefits-paragraph{
+    font-size: 1.5rem;
+}
+
+.benefits{
+    padding: 6rem 10rem 10rem 10rem;
+}
+
+hr{
+    padding-bottom: 6rem;
+}
+
+.mopsu__stages-container h1{
+    text-align: center;
+    font-size: 3.5rem;
+    padding-bottom: 5rem;
+    color: darkslategray;
+}
+
+.mopsu__stages-box{
+    flex: 30% 0 0;
+}
+
+.mopsu__stages-box p{
+    font-size: 1.5rem;
+}
+
+.num1{
+    margin-right: 2rem;
+    padding: 1.5rem 2rem;
+    background-color: tomato;
+    color: white;
+    font-size: 3rem;
+}
+
+.num2{
+    margin-right: 2rem;
+    padding: 1.5rem 2rem;
+    background-color: indigo;
+    color: white;
+    font-size: 3rem;
+}
+
+.num3{
+    margin-right: 2rem;
+    padding: 1.5rem 2rem;
+    background-color: gold;
+    color: white;
+    font-size: 3rem;
+}
+
+.num4{
+    margin-right: 2rem;
+    padding: 1.5rem 2rem;
+    background-color: saddlebrown; 
+    color: white;
+    font-size: 3rem;
+}
+
+.num5{
+    margin-right: 2rem;
+    padding: 1.5rem 2rem;
+    background-color: yellowgreen; 
+    color: white;
+    font-size: 3rem;
+}
+
+
+
+.space{
+    margin-left: 4.5rem;
+}
+
+.fix{
+    margin-left: 3rem;
+}
+
+
+
+
+
+
+/* FOOTER */
+.footer{
+    padding:8rem 4.5rem;
+    display: flex;
+    height: 50%;
+    background-color: black;
+}
+
+.footer__box{
+    font-size: 1.3rem;
+    color: white;
+}
+
+.footer__box-heading{
+    color: white;
+}
+
+
+.footer__box-pa-one{
+    width: 65%;
+}
+.footer__box:not(:last-child){
+    padding-right: 3rem;
+    border-right: 2px solid white;
+}
+
+.footer__box:not(:first-child){
+    margin-left: 7rem;
+}

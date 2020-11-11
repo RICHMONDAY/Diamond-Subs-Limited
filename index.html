@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/home.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Diamond Sub Exploration</title>
+</head>
+<body>
+
+    <!-- NAVIGATION SECTION START-->
+    <nav class="navigation ">
+        
+        <ul class="navigation__links">
+            <li class="navigation__nav-links">
+                <a href="#" class="navigation__nav-items">home</a>
+            </li>
+            <li class="navigation__nav-links">
+                <a href="about.html" class="navigation__nav-items">who we are</a>
+            </li>
+            <li class="navigation__nav-links">
+                <a href="Services.html" class="navigation__nav-items">sustainability</a>
+            </li>
+            <li class="navigation__nav-links">
+                <a href="business.html" class="navigation__nav-items">Our business</a>
+            </li>
+        </ul>
+
+
+        <div class="navigation__items">
+
+            <a href="#" class="navigation__menu-link" onclick="openSlideMenu()">
+                <svg class="navigation__menu-icon">
+                    <use xlink:href="img/sprite2.svg#icon-menu"></use>
+                </svg>
+            </a>
+
+            <div class="side-nav" id="side-menu">
+                <a href="#" class="close"  onclick="closeSlideMenu()">&times;</a>
+                <a href="#">Home</a>
+                <a href="business.html">Our business</a>
+                <a href="about.html">Who We Are</a>
+                <a href="#">sustainability</a>
+            </div>
+            
+            <a href="index.html" class="navigation__logo">
+                <img src="img/logoforpage2.jpg" alt="" class="navigation__logo-link">
+            </a>
+
+        </div>
+
+        <a href="">
+            <img src="img/sub diamond logo.JPG" alt="nav-logo" class="navigation__logo">
+        </a>
+    </nav>
+    <!-- NAVIGATION SECTION END-->
+
+    <!-- CAROUSEL SECTION START-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner slider__one">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="img/sub diamond slider.jpg" alt="First slide">
+            <div class="slider__one-text">
+                <p>Diamond Subs Exploration Limited provides a full range of services that include the provision of mobile offshore production unit, pipeline construction and installation, modular drilling provisions, subsea installation and piping services.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/diamond subs slider 2.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/diamond subs slider 3.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      
+      <main>
+
+        <!-- ASSET SECTION START-->
+          <div class="asset" data-aos="fade-right">
+
+              <div class="asset__image-box">
+                  <img src="img/asset-management.jpg" alt="" class="asset__image">
+              </div>
+
+              <div class="asset__box">
+                  <h2 class="asset__box-heading">Asset Determination and Management</h2>
+
+                  <div class="asset__box-body">
+                      <p class="asset__body-text">
+                        Diamond Subs Exploration Limited provides full asset determination services to clients. The key differentiation is our integrated deliverables:
+                      </p>
+
+                      <p class="asset__body-items">
+                          <svg class="asset__body-icon">
+                              <use xlink:href="img/sprite4.svg#icon-chevron-thin-right"></use>
+                          </svg> Project Work Plan
+                      </p>
+
+                      <p class="asset__body-items">
+                        <svg class="asset__body-icon">
+                            <use xlink:href="img/sprite4.svg#icon-chevron-thin-right"></use>
+                        </svg> Project feasibility report
+                    </p>
+
+                      <a href="" class="asset__box-btn">find out more</a>
+                  </div>
+              </div>
+
+          </div>
+
+          <!-- PRODUCTION-ENG SECTION START-->
+          <div class="product-eng" data-aos="fade-down">
+
+              <div class="product__image-box">
+                  <img src="img/Production-Engineering.jpg" alt="" class="product__image">
+            </div>
+
+            <div class="product__box">
+                <h2 class="product__box-heading">Product Engineering</h2>
+
+                <div class="product__box-body">
+                    <p class="product__body-text">
+                        Our deliverables on production engineering are:
+                    </p>
+
+                    <p class="product__body-items">
+                        <svg class="asset__body-icon">
+                            <use xlink:href="img/sprite4.svg#icon-chevron-thin-right"></use>
+                        </svg> Well evaluation and review report
+                    </p>
+
+                    <p class="product__body-items">
+                        <svg class="asset__body-icon">
+                            <use xlink:href="img/sprite4.svg#icon-chevron-thin-right"></use>
+                        </svg> Short-term (quick win) activities report - stimulation, zone change..
+                    </p>
+
+                    <a href="" class="product__box-btn">find out more</a>
+                </div>
+            </div>
+
+
+          </div>
+
+          <!-- POLICY SECTION START-->
+          <div class="policy" data-aos="fade-up">
+
+              <h1 class="policy__heading">Quality policy</h1>
+
+              <div class="policy__body-container d-flex justify-content-center">
+                <p class="policy__body">
+                    It is the policy of Diamond Subs Explorations Limited to provide a service that satisfies our clients needs, meet the specified qiality requirements that are in accordance with the contarctual specifications, code and statuory requirements. In achieving the goal, the company places importance on the training  and elimination of causes and errors with emphasis on preventive maintenance rather reactive. This way we achieve high quality at low costs. To yield the required customers satisfaction and corporate goal, the comapny implements an efficient quality manasgement system based on ISO 9001: 2008 and other standards/codes to improve the quality of operations.
+    
+                    <br></br>Proper training and dissemination of information are employed to ensure that workforce adhere to quality system requirements, safety work methods and procedures, codes and regualtions.   
+                  </p>
+              </div>
+             
+          </div>
+
+             <!-- POLICY SECTION END-->
+
+
+             <!-- SAFETY SECTION START-->
+          <div class="safety" data-aos="fade-left">
+              <div class="safety__image"></div>
+
+              <div class="safety__box">
+                  <h1 class="safety__box-heading">Health & Safety Policy</h1>
+                    <p class="safety__body">
+                        We proactively integrate HSE objectives into our management systems at all levels and passionately drive this with our reward and recognition programs. This is extremely important to our operational and business success since it lowers risk and makes our services more valuable.
+                        <p class="safety__body">commitment is in the best interest of our clients, workforce , contractors and shareholders. Management bears the overall responsibility for HSE with the active support and commitment of all our employees and contractors.</p>  
+                    </p>
+              </div>
+          </div>
+          <!-- SAFETY SECTION END-->
+
+      </main>
+
+      <!-- FOOTER SECTION START-->
+      <footer class="footer">
+          <div class="footer__box">
+              <h3 class="footer__box-heading">Office Address</h3>
+              <p class="footer__box-pa-one">Nigeria: Housing 86, Eleganza, Opposite Victoria Garden City, Lekki, Lagos.</p>
+              <p class="footer__box-pa-one">Gryphon Energy, c4-3-10, Solaris, Dutamas 1, 50480 Kuala Lampur, Malaysia</p>
+          </div>
+          <div class="footer__box">
+              <h3 class="footer__box-heading">Contact Us</h3>
+              <p >Nigeria</p>
+              <p>Telephone: +234 7098504928</p> 
+              <p>Email: sales@diamondsubsgroup.com</p>
+              <p>Website: www.diamondexplore.com</p>
+          </div>
+
+          <div class="footer__box">
+              <h3 class="footer__box-heading">Quick Links</h3>
+              <p >
+                  <li><a href="">Careers</a></li>
+                  <li><a href="">Sitemap</a></li>
+                  <li><a href="">Privacy Statement</a></li>
+              </p>
+          </div>
+          <div class="footer__box">
+              <h3 class="footer__box-heading">Social Media</h3>
+              <p></p>
+          </div>
+      </footer>
+
+   
+
+
+
+
+
+  <script src="app.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="AOS.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
